@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1,
+h2,
+h3 {
+    margin-bottom: 20px;
+}
+
+button {
+    cursor: pointer;
+}
