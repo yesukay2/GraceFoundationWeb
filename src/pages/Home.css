@@ -43,6 +43,16 @@
     text-align: center;
 }
 
+.about-text{
+    font-size: large;
+    text-align: center;
+    margin: 5px;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    line-height: 1.8;
+    letter-spacing: 1px;
+    color: #211e1e;
+}
+
 
 .stats {
     display: flex;

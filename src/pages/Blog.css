@@ -57,6 +57,18 @@
     margin-bottom: 10px;
 }
 
+.pdfViewButton{
+    background-color: #228b22;
+    color: #fff;
+    padding: 10px 20px;
+    width: 2rem;
+    height: auto;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+
+}
 /* Read more link */
 .blog-card .read-more {
     font-size: 0.9rem;

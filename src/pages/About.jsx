@@ -1,5 +1,6 @@
 import "./About.css";
-import { FaEnvelope, FaPhone } from "react-icons/fa";
+import { FaEnvelope, FaPhone, FaPersonBooth } from "react-icons/fa";
+import momoPic from "../assets/momo.png";
 
 const About = () => {
   return (
@@ -52,18 +53,18 @@ const About = () => {
         <div className="members-grid">
           {/* Board Members */}
           <div className="member">
-            <img src="src/assets/Marian.JPG" alt="Board Member 1" />
+            <img src="/assets/Marian.JPG" alt="Board Member 1" />
             <h3>Miss Marian Grace Mensah</h3>
             <p>Founder & CEO</p>
           </div>
           <div className="member">
-            <img src="src/assets/Patricia.JPG" alt="Board Member 2" />
+            <img src="/assets/Patricia.JPG" alt="Board Member 2" />
             <h3>Patricia Mensah</h3>
             <p>Deputy Director</p>
           </div>
           <div className="member">
-            <img src="src/assets/Richard.JPG" alt="Board Member 3" />
-            <h3>Richard Tenga Dezermy</h3>
+            <img src="/assets/Richard.JPG" alt="Board Member 3" />
+            <h3>Richard  Dezermy Tenga</h3>
             <p>Director of Finance</p>
           </div>
         </div>
@@ -74,27 +75,27 @@ const About = () => {
         <div className="members-grid">
           {/* Executive Team */}
           <div className="executive-member">
-            <img src="src/assets/Marian.JPG" alt="Executive Member 1" />
+            <img src="/assets/Marian.JPG" alt="Executive Member 1" />
             <h3>Miss Marian Grace Mensah</h3>
             <p>Chairperson</p>
           </div>
           <div className="executive-member">
-            <img src="src/assets/Iss.JPG" alt="Executive Member 2" />
+            <img src="/assets/Iss.JPG" alt="Executive Member 2" />
             <h3>Amina Salifu Abugri</h3>
             <p>Vice Chairperson</p>
           </div>
           <div className="executive-member">
-            <img src="src/assets/Bernadine.JPG" alt="Executive Member 3" />
-            <h3>Bernadine Essel</h3>
+            <img src="/assets/Bernadine.JPG" alt="Executive Member 3" />
+            <h3>Bernardine Essel</h3>
             <p>General Secretary</p>
           </div>
           <div className="executive-member">
-            <img src="src/assets/Helena.JPG" alt="Executive Member 4" />
+            <img src="/assets/Helena.JPG" alt="Executive Member 4" />
             <h3>Helena Acquah</h3>
             <p>Financial Secretary</p>
           </div>
           <div className="executive-member">
-            <img src="src/assets/Emmanuella.JPG" alt="Executive Member 5" />
+            <img src="/assets/Emmanuella.JPG" alt="Executive Member 5" />
             <h3>Emmanuella Asomaning</h3>
             <p>Programs Coordinator</p>
           </div>
@@ -108,17 +109,36 @@ const About = () => {
           Join us in promoting health, education, and skills development for
           women and girls in Ghana. Together, we can make a difference!
         </p>
+        <div className="contact-container">
         <div className="contact-info">
           <h3>Reach Out to Us</h3>
           <div className="contact-item">
             <FaEnvelope className="icon" />
-            <p>gracemedicalf@gmail.com</p>
+            <p>info@gracemedicalfoundation.online</p>
           </div>
           <div className="contact-item">
             <FaPhone className="icon" />
             <p>0546915200</p>
           </div>
-        </div>
+          <div className="volunteer-form">
+            <FaPersonBooth className="icon" />
+            <div className="volunteer-link">
+            <a href="https://8vp71rt8.forms.app/membership-application-form">Become a Volunteer/Member</a>
+            </div>
+          </div>
+          </div>
+          <div className="contact-info">
+            <h3>Donate to Our Cause</h3>
+            <p>Send all donations to our mobile money account below:</p>
+            <div className="contact-item" style={{marginTop:"12px"}}>
+              <img style={{width: "90px", height: "60px", marginRight: "15px"}} src={momoPic} alt="" />
+              <div style={{display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: "5px"}}>
+              <div style={{fontSize: "15px", padding: "0px", margin: "0px"}}>+233 546 915 200</div>
+              <div style={{fontSize: "14px", padding: "0px", margin: "0px"}}>Grace Medical Foundation</div>
+              </div>
+            </div>
+            </div>
+          </div>
       </section>
     </div>
   );

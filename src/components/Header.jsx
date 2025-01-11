@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import "./Header.css";
+import logo from "/src/assets/logo.png"
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,8 +22,8 @@ const Header = () => {
         className="logo"
         style={{ display: "flex", alignItems: "center", gap: "10px" }}
       >
-        <img src="src/assets/logo.JPG" alt="Logo" />
-        <div style={{ fontSize: "1rem" }}>Grace Medical Foundation</div>
+        <img src={logo} alt="Logo" style={{ height: "3.5rem", width: "4.5rem", marginRight: "0px" }} />
+        <div style={{ fontSize: "1.2rem", marginLeft: "0px", paddingLeft: "0px" }}>Grace Medical Foundation</div>
       </div>
 
       {/* Navbar */}
@@ -53,7 +54,7 @@ const Header = () => {
       </nav>
 
       {/* Hamburger Icon */}
-      <div className="hamburger" onClick={toggleMenu}>
+      <div className="hamburger" onClick={toggleMenu} style={{ cursor: "pointer", visibility: isOpen ? "none" : "block" }}>
         <span className="bar"></span>
         <span className="bar"></span>
         <span className="bar"></span>

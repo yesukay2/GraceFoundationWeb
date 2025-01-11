@@ -49,13 +49,13 @@ const Home = () => {
       {/* About Section */}
       <section className="about">
         <h2>What We Do</h2>
-        <p>
+        <div className="about-text">
           Grace Medical Foundation is a non-profit organisation that seeks to
           empower women and girls in Ghana through health education, mentorship,
           and skills development. We focus on preventive health measures, aiming
           to promote a culture of wellness for women, adolescents, and the
           elderly.
-        </p>
+        </div>
       </section>
 
       {/* Impact Section */}

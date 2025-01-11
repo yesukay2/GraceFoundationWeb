@@ -1,8 +1,13 @@
+#root {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+}
+
 body {
     margin: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    font-variant: normal;
     background-color: white;
-    color: #333;
+    color: #211e1e;
 }
 
 a {
